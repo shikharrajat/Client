@@ -1,4 +1,4 @@
-import express, { Router } from 'express';
+import express from 'express';
 import * as dotenv from 'dotenv';
 import { Configuration, OpenAIApi } from 'openai';
 
@@ -15,7 +15,7 @@ const configuration = new Configuration({
   const openai = new OpenAIApi(configuration);
   
   router.route('/').get((req, res) => {
-    res.status(200).json({ message: 'Hello from DALL-E!' });
+    res.send('Hello from  !');
   });
   
   router.route('/').post(async (req, res) => {
@@ -28,7 +28,7 @@ const configuration = new Configuration({
         size: '1024x1024',
         response_format: 'b64_json',
       });
-  
+                   
       const image = aiResponse.data.data[0].b64_json;
       res.status(200).json({ photo: image });
     } catch (error) {
