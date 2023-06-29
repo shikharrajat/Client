@@ -22,7 +22,7 @@ app.get('/', async(req,res) => {
 const startServer = async () => {
     try {
         connectedDB(process.env.MONGODB_URL);
-        app.listen(8080, () => console.log('Server has started on port http://localhost:8080')) 
+        app.listen(() => console.log('Server has started on port https://imageverse-zus3.onrender.com')) 
     } catch (error) {
          console.log(error);
     }
