@@ -61,8 +61,6 @@ The server will start running on the specified port (default: 3000).
 ## Contributions
 Contributions, issues, and feature requests are welcome!
 
-## License
-This project is licensed under the MIT License. See `LICENSE` for more information.
 
 ## Acknowledgements
 Thanks to OpenAI for providing the API used for image generation and to Cloudinary for providing the service for image management.
